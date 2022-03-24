@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const Song = ({song}) => {
   return (
+    <div>
     <Link
       to='/song'
       state={{song}}
@@ -12,7 +13,9 @@ const Song = ({song}) => {
         <h3>{song.name['name-USen']}</h3>
       </div>
     </Link>
+        <button>Test button</button>
+    </div>
   );
 }
- 
+
 export default Song;
